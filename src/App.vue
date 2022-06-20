@@ -1,17 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <h1>Test chart.js with Vue</h1>
+  <div class="float-container">
+    <BarChart />
+    <MyBar />
+    <MyPie />
+    <MyLine />
+    <MyRadar />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BarChart from "./components/BarChart.vue";
+import MyBar from "./components/MyBar.vue";
+import MyPie from "./components/MyPie.vue";
+import MyLine from "./components/MyLine.vue";
+import MyRadar from "./components/MyRadar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    BarChart,
+    MyBar,
+    MyPie,
+    MyLine,
+    MyRadar,
+  },
+};
 </script>
 
 <style>
